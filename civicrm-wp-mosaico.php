@@ -96,7 +96,8 @@ class CiviCRM_WP_Mosaico {
 	 *
 	 * @since 0.1
 	 *
-	 * @param object $config The CiviCRM config object.
+	 * @param \Civi\Core\Event\GenericHookEvent $event The event object.
+	 * @param str $hook The name of the hook currently being run.
 	 */
 	public function register_php_directory( $event, $hook ) {
 
@@ -115,11 +116,12 @@ class CiviCRM_WP_Mosaico {
 
 
 	/**
-	 * Register directories that CiviCRM searches for php and template files.
+	 * Register directories that CiviCRM searches for template files.
 	 *
 	 * @since 0.1
 	 *
-	 * @param object $config The CiviCRM config object.
+	 * @param \Civi\Core\Event\GenericHookEvent $event The event object.
+	 * @param str $hook The name of the hook currently being run.
 	 */
 	public function register_template_directory( $event, $hook ) {
 
