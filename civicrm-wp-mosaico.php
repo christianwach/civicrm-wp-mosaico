@@ -60,11 +60,7 @@ class CiviCRM_WP_Mosaico {
 
 
 	/**
-	 * Register directory that CiviCRM searches in for new PHP files.
-	 *
-	 * This only works with *new* PHP files. One cannot override existing PHP
-	 * with this technique - instead, the file must be placed in the path:
-	 * defined in $config->customPHPPathDir
+	 * Register directories that CiviCRM searches in.
 	 *
 	 * @since 0.1
 	 *
