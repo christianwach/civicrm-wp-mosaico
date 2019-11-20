@@ -72,17 +72,17 @@ class CiviCRM_WP_Mosaico {
 	 */
 	public function register_directories( &$config ) {
 
-        Civi::service('dispatcher')->addListener(
-            'hook_civicrm_coreResourceList',
-            array( $this, 'register_php_directory' ),
-            -200
-        );
+		Civi::service('dispatcher')->addListener(
+			'hook_civicrm_coreResourceList',
+			array( $this, 'register_php_directory' ),
+			-200
+		);
 
-        Civi::service('dispatcher')->addListener(
-            'hook_civicrm_coreResourceList',
-            array( $this, 'register_template_directory' ),
-            -200
-        );
+		Civi::service('dispatcher')->addListener(
+			'hook_civicrm_coreResourceList',
+			array( $this, 'register_template_directory' ),
+			-200
+		);
 
 	}
 
