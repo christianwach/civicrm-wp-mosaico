@@ -1,2 +1,4 @@
-# civicrm-wp-mosaico
-Testing how to override the Mosaico template.
+# CiviCRM WordPress Mosaico Test
+
+Testing how to override the root Mosaico template.
+
